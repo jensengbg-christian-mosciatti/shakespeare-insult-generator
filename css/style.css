@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  color: rgb(87, 87, 87);
+}
+
+h1 {
+  font-family: "Great Vibes", cursive;
+}
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+main div {
+  position: relative;
+  height: 30%;
+  width: 100%;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+}
+
+.slide {
+  text-align: center;
+  left: 0;
+  right: 0;
+  position: absolute;
+  /* left: 0px; */
+  /* width: 600px;
+  height: 370px; */
+  /* background: blue; */
+  /* -webkit-animation: slide 0.5s forwards; */
+  /* -webkit-animation-delay: 2s; */
+  animation: slide 4s forwards infinite;
+  /* animation-delay: -0.5s; */
+}
+@keyframes slide {
+  0% {
+    left: -1600px;
+    right: 1600px;
+    /* left: -100vw;
+    right: 1600px; */
+  }
+  20% {
+    left: 0;
+    right: 0;
+  }
+  78% {
+    left: 0;
+    right: 0;
+  }
+  85% {
+    left: -60px;
+    right: 0;
+  }
+  100% {
+    left: 1600px;
+    right: -4000px;
+  }
+}
+
+#btn {
+  padding: 0.5rem 1.5rem;
+  background-color: inherit;
+  border: 2px solid rgb(163, 163, 163);
+  color: rgb(133, 133, 133);
+  box-shadow: none;
+  width: 10rem;
+  font-weight: bold;
+  border-radius: 8px;
+}
+#btn:focus {
+  outline: none;
+}
