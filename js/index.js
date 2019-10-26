@@ -84,7 +84,6 @@ button.addEventListener("click", function(event) {
   event.preventDefault();
   button.innerHTML = pause ? "Pause" : "Start";
   slider.classList.toggle("slide");
-  console.log(slider);
   pause = !pause;
   pause ? clearInterval(interval) : loop();
 });
